@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited by XMLSpy -->
+<clientes> 
+	<cliente>
+		<nombre>Marta</nombre>
+		<apellido>Pastor</apellido>
+		<telefono>623140012</telefono>
+		<email>martasalguero@gmail.com</email>	
+		<id>111</id>
+		<direccion>Calle Curtidores</direccion>		
+	</cliente>
+	<cliente>
+		<nombre>Abigail</nombre>
+		<apellido>Salguero</apellido>
+		<telefono>673012527</telefono>
+		<email>abigailsalguero@gmail.com</email>
+		<id>222</id>
+		<direccion>Calle Portadas</direccion>	
+	</cliente>
+	<cliente>
+		<nombre>Alvaro</nombre>
+		<apellido>Gomez</apellido>
+		<telefono>608826215</telefono>
+		<email>alvarogomez@gmail.com</email>
+		<id>333</id>
+		<direccion>Calle Pasaje Corona</direccion>	
+	</cliente>
+	<cliente>
+		<nombre>Joaquin</nombre>
+		<apellido>Velasco</apellido>
+		<telefono>611221000</telefono>
+		<email>joaquinvelasco@gmail.com</email>
+		<id>444</id>
+		<direccion>Calle Geminis</direccion>	
+	</cliente>
+	<cliente>
+		<nombre>Laura</nombre>
+		<apellido>Cruz</apellido>
+		<telefono>602800082</telefono>
+		<email>lauracruz@gmail.com</email>
+		<id>555</id>
+		<direccion>Calle Cisne</direccion>	
+	</cliente>
+	<cliente>
+		<nombre>Selena</nombre>
+		<apellido>Elena</apellido>
+		<telefono>600191000</telefono>
+		<email>selenaelena@gmail.com</email>
+		<id>666</id>
+		<direccion>Calle Mejias</direccion>	
+	</cliente>
+</clientes>

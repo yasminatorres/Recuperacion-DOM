@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited by XMLSpy -->
+<peones> 
+	<peon>
+		<nombre>Antonio</nombre>
+		<apellido>Torres</apellido>
+		<telefono>623141312</telefono>
+		<email>antoniotorres@gmail.com</email>	
+		<id>111</id>
+		<categoria>Todas</categoria>		
+	</peon>
+	<peon>
+		<nombre>Paco</nombre>
+		<apellido>Salguero</apellido>
+		<telefono>673242527</telefono>
+		<email>pacosalguero@gmail.com</email>
+		<id>222</id>
+		<categoria>Fontanería</categoria>	
+	</peon>
+	<peon>
+		<nombre>Rivas</nombre>
+		<apellido>Fernandez</apellido>
+		<telefono>692826215</telefono>
+		<email>rivasfernandez@gmail.com</email>
+		<id>333</id>
+		<categoria>Carpintería</categoria>	
+	</peon>
+	<peon>
+		<nombre>Miguel</nombre>
+		<apellido>Torres</apellido>
+		<telefono>611221413</telefono>
+		<email>migueltorres@gmail.com</email>
+		<id>444</id>
+		<categoria>Carpintería</categoria>	
+	</peon>
+	<peon>
+		<nombre>Roberto</nombre>
+		<apellido>Marin</apellido>
+		<telefono>602829182</telefono>
+		<email>robertomarin@gmail.com</email>
+		<id>555</id>
+		<categoria>Electricidad</categoria>	
+	</peon>
+	<peon>
+		<nombre>Manuel</nombre>
+		<apellido>Torres</apellido>
+		<telefono>600191834</telefono>
+		<email>manueltorres@gmail.com</email>
+		<id>666</id>
+		<categoria>Fontanería</categoria>	
+	</peon>
+</peones>

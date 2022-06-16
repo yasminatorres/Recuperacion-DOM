@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<!-- Enlaces a bootstrap-->
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>ATM</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="#"  onclick="gestionFormularios('frmAltaCategoria');">Alta categoría</a>
+				</li>
+				<li>
+					<a href="#"  onclick="gestionFormularios('frmAltaPersona');">Alta persona</a>
+				</li>
+				<li>
+					<a href="#"  onclick="gestionFormularios('frmAnularPersona');">Baja persona</a>
+				</li>
+				<li>
+					<a href="#"  onclick="gestionFormularios('frmAltaCita');">Alta cita</a>
+				</li>
+				<li>
+					<a href="#"  onclick="gestionFormularios('frmModificarCita');">Modificar cita</a>
+				</li>
+				<li class="divider"></li>
+				<li><a href="#" onclick="gestionFormularios('listadoCitas');">Ver citas</a></li>
+				<li><a href="#" onclick="gestionFormularios('listadoCategorias');">Ver categorías</a></li>
+				<li><a href="#" onclick="gestionFormularios('listadoCitasDia');">Ver citas por día</a></li>
+				<li><a href="#" onclick="gestionFormularios('listadoCitasFecha');">Ver citas entre dos fechas</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container" id="formularios">
+		<div class="row">
+			<form class="form-horizontal" name="frmAltaCategoria" id="frmAltaCategoria">
+				<fieldset>
+					<!-- Form Name -->
+					<legend>Alta de Categoría</legend>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtIDCategoria">ID de categoría</label>
+						<div class="col-xs-4">
+							<input id="txtIDCategoria" name="txtIDCategoria" placeholder="ID de categoría"
+								class="form-control input-md" type="text">
+						</div>
+					</div>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtNombre">Nombre</label>
+						<div class="col-xs-4">
+							<input id="txtNombre" name="txtNombre" placeholder="Nombre" class="form-control input-md"
+								type="text">
+						</div>
+					</div>
+			
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtExperiencia">Experiencia
+							</label>
+						<div class="col-xs-4">
+							<input id="txtExperiencia" name="txtExperiencia" placeholder="Nivel de experiencia" class="form-control input-md"
+								type="text">
+						</div>
+					</div>
+									
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="btnAceptarAltaCategoria"></label>
+						<div class="col-xs-4">
+							<input type="button" id="btnAceptarAltaCategoria" name="btnAceptarAltaCategoria"
+								class="btn btn-warning" value="Aceptar" />
+						</div>
+					</div>
+				</fieldset>
+			</form>
+			<form class="form-horizontal" name="frmAltaPersona" id="frmAltaPersona">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Alta Persona</legend>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtNombre">Nombre</label>
+						<div class="col-xs-4">
+							<input id="txtNombre" name="txtNombre" placeholder="Nombre"
+								class="form-control input-md" type="text">
+			
+						</div>
+					</div>
+			
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtApellido">Apellido</label>
+						<div class="col-xs-4">
+							<input id="txtApellido" name="txtApellido" placeholder="Apellido"
+								class="form-control input-md" type="text">
+			
+						</div>
+					</div>	
+			
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtTelefono">Telefono</label>
+						<div class="col-xs-4">
+							<input id="txtTelefono" name="txtTelefono" placeholder="Telefono"
+								class="form-control input-md" type="text">
+			
+						</div>
+					</div>
+			
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtEmail">Email</label>
+						<div class="col-xs-4">
+							<input id="txtEmail" name="txtEmail" placeholder="Email"
+								class="form-control input-md" type="text">
+			
+						</div>
+					</div>
+
+                    <!-- Multiple Radios -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="rbtTipoPersona">Tipo Persona</label>
+						<div class="col-xs-4">
+							<div class="radio">
+								<input name="rbtTipoPersona" id="rbtTipoPersona-C" value="C"
+									type="radio">
+								<label for="rbtTipoPersona-C">Cliente</label>
+							</div>
+							<div class="radio">
+								<input name="rbtTipoPersona" id="rbtTipoPersona-R" value="R" type="radio">
+								<label for="rbtTipoPersona-R">Peón</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div id="botones" class="form-group">
+						<label class="col-xs-4 control-label" for="txtIdCliente">ID Cliente
+							</label>
+						<div class="col-xs-4">
+							<input id="txtIdCliente" name="txtIdCliente" placeholder="ID de Cliente" class="form-control input-md"
+								type="text">
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div id="botonesC" class="form-group">
+						<label class="col-xs-4 control-label" for="txtDireccion">Dirección
+							</label>
+						<div class="col-xs-4">
+							<input id="txtDireccion" name="txtDireccion" placeholder="Dirección" class="form-control input-md"
+								type="text">
+						</div>
+					</div>
+					
+					<!-- Text input-->
+					<div id="botones1" class="form-group">
+						<label class="col-xs-4 control-label" for="txtIdPeon">ID Peón
+							</label>
+						<div class="col-xs-4">
+							<input id="txtIdPeon" name="txtIdPeon" placeholder="ID de Peón" class="form-control input-md"
+								type="text">
+						</div>
+					</div>		
+					
+					<!-- Text input-->
+					<div id="botonesP" class="form-group">
+						<label class="col-xs-4 control-label" for="txtCategoria">Categoría
+							</label>
+						<div class="col-xs-4">
+							<input id="txtCategoria" name="txtCategoria" placeholder="Categoría" class="form-control input-md"
+								type="text">
+						</div>
+					</div>	
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="btnAceptarAltaPersona"></label>
+						<div class="col-xs-4">
+							<input type="button" id="btnAceptarAltaPersona" name="btnAceptarAltaPersona" class="btn btn-warning" value="Aceptar" />
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+
+			<form class="form-horizontal" name="frmAnularPersona" id="frmAnularPersona">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Anular persona</legend>
+
+					<!-- Date input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtPersona">Introduce una persona</label>
+						<div class="col-xs-4">
+							<input id="txtPersona" name="txtPersona" placeholder="Introduzca persona"
+								class="form-control input-md" type="text">
+
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="btnAceptarAnular"></label>
+						<div class="col-xs-4">
+							<input type="button" id="btnAceptarAnular" name="btnAceptarAnular" class="btn btn-warning" value="Anular" />
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+
+			<form class="form-horizontal" name="frmAltaCita" id="frmAltaCita">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Alta Cita</legend>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtIdCita">ID de cita</label>
+						<div class="col-xs-4">
+							<input id="txtIdCita" name="txtIdCita" placeholder="ID de cita"
+								class="form-control input-md" type="text">
+						</div>
+					</div>
+			
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtIdCliente">IdCliente</label>
+						<div class="col-xs-4">
+							<input id="txtIdCliente" name="txtIdCliente"
+								placeholder="ID de cliente" class="form-control input-md" type="text">
+
+						</div>
+					</div>					
+					
+					<!-- Date input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtFecha">Seleccione una fecha</label>
+						<div class="col-xs-4">
+							<input id="txtFecha" name="txtFecha" placeholder="Fecha Pedido"
+								class="form-control input-md" type="date">
+
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtReforma">Tipo de reforma</label>
+						<div class="col-xs-4">
+							<input id="txtReforma" name="txtReforma"
+								placeholder="Tipo de reforma" class="form-control input-md" type="text">
+
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="btnAceptarCita"></label>
+						<div class="col-xs-4">
+							<input type="button" id="btnAceptarCita" name="btnAceptarCita"
+							class="btn btn-warning" value="Aceptar" />
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+
+			<form class="form-horizontal" name="frmModificarCita" id="frmModificarCita">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Modificar cita</legend>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtIdCita">Citas</label>
+						<div class="col-xs-4">
+							<select class="form-control input-md" onchange="cargarCitas()">
+								<option>Seleccione una cita...
+							</select>
+						</div>
+					</div>
+
+					<!-- Date input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtFecha">Seleccione una fecha</label>
+						<div class="col-xs-4">
+							<input id="txtFecha" name="txtFecha" placeholder="Fecha Pedido"
+								class="form-control input-md" type="date">
+
+						</div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtReforma">Tipo de reforma</label>
+						<div class="col-xs-4">
+							<input id="txtReforma" name="txtReforma" placeholder="Dirección"
+								class="form-control input-md" type="text">
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="btnBuscarID"></label>
+						<div class="col-xs-4">
+							<input type="button" id="btnBuscarID" name="btnBuscarID"
+							class="btn btn-warning" value="Modificar" />
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+
+			<form class="form-horizontal" name="listadoCitasDia" id="listadoCitasDia">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Listado de citas por día</legend>
+
+					<!-- Date input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtFecha">Seleccione una fecha</label>
+						<div class="col-xs-4">
+							<input id="txtFecha" name="txtFecha" placeholder="Fecha Cita"
+								class="form-control input-md" type="date">
+
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="btnAceptarListadoCitasDia"></label>
+						<div class="col-xs-4">
+							<input type="button" id="btnAceptarListadoCitasDia" name="btnAceptarListadoCitasDia" class="btn btn-warning" value="Aceptar" />
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+
+			<form class="form-horizontal" name="listadoCitasFecha" id="listadoCitasFecha">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Listado de citas entre fechas</legend>
+
+					<!-- Date input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtFechaInicio">Fecha de inicio</label>
+						<div class="col-xs-4">
+							<input id="txtFechaInicio" name="txtFechaInicio" placeholder="Fecha inicio"
+								class="form-control input-md" type="date">
+
+						</div>
+					</div>
+
+					<!-- Date input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtFechaFin">Fecha de fin</label>
+						<div class="col-xs-4">
+							<input id="txtFechaFin" name="txtFechaFin" placeholder="Fecha fin"
+								class="form-control input-md" type="date">
+
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="btnAceptarListadoCitasFecha"></label>
+						<div class="col-xs-4">
+							<input type="button" id="btnAceptarListadoCitasFecha" name="btnAceptarListadoCitasFecha" class="btn btn-warning" value="Aceptar" />
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+
+			<div id="listados"></div>
+
+		</div>
+	</div>
+	<script type="text/javascript" src="js/objetos.js"></script>
+	<script type="text/javascript" src="js/codigo.js"></script>
+</body>
+
+</html>

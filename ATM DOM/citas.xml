@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited by XMLSpy -->
+<citas> 
+	<cita>
+		<idCita>11</idCita>
+		<idCliente>111</idCliente>
+		<fecha>2022-06-16</fecha>
+		<tipo>Alicatar el baño</tipo>			
+	</cita>
+	<cita>
+		<idCita>22</idCita>
+		<idCliente>222</idCliente>
+		<fecha>2022-06-14</fecha>
+		<tipo>Arreglar escaleras</tipo>	
+	</cita>
+	<cita>
+		<idCita>33</idCita>
+		<idCliente>444</idCliente>
+		<fecha>2022-06-28</fecha>
+		<tipo>Pintar fachada</tipo>
+	</cita>
+	<cita>
+		<idCita>44</idCita>
+		<idCliente>666</idCliente>
+		<fecha>2022-07-02</fecha>
+		<tipo>Cambiar cocina</tipo>
+	</cita>
+</citas>
